@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+ <main>
+  <div class="container">
+    <h1>Spli tter</h1>
+    <section>
+      <div class="container-interface">
+        <div class="numbers">
+          <h2 class="text">
+            Bill
+          </h2>
+          <input type="number" id="input-price" onkeyup="disabledinput()" placeholder="0">
+          <img src="./images/icon-dollar.svg" alt="icon dollar">
+        </div>
+
+        <div class="container-buttons">
+          <h2 class="text">
+            Select Tip %
+          </h2>
+          <div class="buttons">
+            <button class="btn-percentage" value="5">5%</button>
+            <button class="btn-percentage" value="10">10%</button>
+            <button class="btn-percentage" value="15">15%</button>
+            <button class="btn-percentage" value="25">25%</button>
+            <button class="btn-percentage" value="50">50%</button>
+            <input id="input-percentage" class="intperc  btn-percentage" onkeyup="inputPercentage()" type="number"  placeholder="Custom">
+          </div>
+
+        </div>
+
+        <div class="number-people">
+          <h2 class="text">Number of People</h2>
+          <span class="alert">Cant't be zero</span>
+          <input type="number"  id="input-persons" class="error" placeholder="0" onkeyup="inputPercentage()">
+          <img src="./images/icon-person.svg" alt="icon person">
+        </div>
+      </div>
+      <div class="container-total">
+
+        <div class="total-tip">
+          <h2>
+            Tip Amount
+            <strong>
+              / person
+            </strong>
+          </h2>
+          <span id="tip-person">$0.00</span>
+        </div>
+
+        <div class="total-tip text-total">
+          <h2>
+            Total
+            <br>
+            <strong>
+               / person
+            </strong>
+          </h2>
+          <span id="total-person">$0.00</span>
+        </div>
+
+        <button class="reset" >Reset</button>
+
+      </div>
+    </section>
+  </div>
+  
+ </main>
+ <script src="./app.js"></script>
+</body>
+</html>
