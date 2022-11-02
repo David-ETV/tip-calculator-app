@@ -1,5 +1,5 @@
 const $btnPercentage = document.querySelectorAll(".btn-percentage");
-const price =  document.querySelector("#input-price");
+const price = document.querySelector("#input-price");
 const tipAmoun = document.getElementById("tip-person");
 const tipTotal = document.getElementById("total-person");
 const ttPerson = document.querySelector(".error");
@@ -75,15 +75,14 @@ $btnPercentage.forEach((boton) => {
   });
 });
 
-btnReset.addEventListener('click', () =>{
- price.value = "";
- inputPercen. value = "";
- ttPerson.value = "";
- tipAmoun.innerHTML = '$0.00'; 
- tipTotal.innerHTML = '$0.00';
- btnReset.style.backgroundColor = "rgb(44 98 104)";
- contBtn.style.pointerEvents = "none";
- ttPerson.style.pointerEvents = "none";
- btnReset.style.pointerEvents = "none";
- 
+btnReset.addEventListener("click", () => {
+  price.value = "";
+  inputPercen.value = "";
+  ttPerson.value = "";
+  tipAmoun.innerHTML = "$0.00";
+  tipTotal.innerHTML = "$0.00";
+  btnReset.style.backgroundColor = "rgb(44 98 104)";
+  contBtn.style.pointerEvents = "none";
+  ttPerson.style.pointerEvents = "none";
+  btnReset.style.pointerEvents = "none";
 });

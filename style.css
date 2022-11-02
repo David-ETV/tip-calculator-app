@@ -374,7 +374,7 @@ span{
   cursor: pointer;
 }
 
-@media(min-width:500px){
+@media(min-width:700px){
   h1{
     width: 6.5vw;
     font-size: 1.65vw;
